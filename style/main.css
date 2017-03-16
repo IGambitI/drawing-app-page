@@ -1,0 +1,103 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+html {
+  height: 100%;
+  width: 100%;
+}
+body {
+  font-family: arial;
+  color: black;
+  height: 100%;
+  width: 100%;
+  background-color: #003300;
+}
+.top {
+  height: 11%;
+}
+.nav {
+  height: 100%;
+}
+.nav ul {
+  list-style-type: none;
+  background: linear-gradient(#009900, #4dff4d);
+  padding: 5px;
+  height: 100%;
+  z-index: -5;
+}
+
+.nav li {
+  font-size: 30px;
+  text-align: center;
+  border: 4px solid black;
+  border-radius:20px;
+  margin-right: 5px;
+  margin-left: 5px;
+  display: inline-block;;
+}
+#li1 {
+  padding: 8px;
+  background: linear-gradient(45deg, #336600, #66cc00);
+}
+#li2 {
+  padding: 8px;
+  background: linear-gradient(35deg, #336600, #66cc00);
+}
+#li3 {
+  padding: 8px;
+  background: linear-gradient(45deg, #336600, #66cc00);
+}
+#li4 {
+  padding: 8px;
+  float: right;
+  background: linear-gradient(45deg, #336600, #66cc00);
+}
+
+.mid {
+  position: absolute;
+  height: 86%;
+  width: 100%;
+  overflow: hidden;
+  background: linear-gradient(#4dff4d, #006600);
+}
+.container {
+ width: 100%;
+ height: 100%;
+}
+.slide1 {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+}
+.slide1 > div {
+  width: 100%;
+  float: left;
+  height: 100%;
+  overflow: scroll;
+ }
+
+.slide1 .content {
+  margin-top: 100px;
+  text-align: center;
+ }
+.slide1 .content a {
+  font-size: 30px;
+ }
+.slide {
+  background-color: red;
+}
+
+
+.bottom {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  display: block;
+  overflow: hidden;
+  font-size: 12px;
+}
