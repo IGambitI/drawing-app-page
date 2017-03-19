@@ -11,7 +11,7 @@ var wp = (function(){
 		var slides = []
 		var html = "";
 
-	
+
 		var handler = function(e)
 		{
 			var index = $(e.target).index();
@@ -45,7 +45,7 @@ var wp = (function(){
 					success: function(data){
 						for (var i = 0; i < data.length; i++)
 						{
-							html += "<div class='dane'></div>";
+							html += "<div class=\""+dane+"\"div>";
 							html += "<img src=\""+data[i].image+"\"/>";
 						}
 						$slides.width(data.length*1100);
