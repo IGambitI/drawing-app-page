@@ -11,7 +11,7 @@ body {
   color: black;
   height: 100%;
   width: 100%;
-  background-color: #003300;
+  background-color: #001a00;
 }
 .top {
   height: 11%;
@@ -21,7 +21,7 @@ body {
 }
 .nav ul {
   list-style-type: none;
-  background: linear-gradient(#009900, #4dff4d);
+  background: linear-gradient(#004d00, #008000);
   padding: 5px;
   height: 100%;
   z-index: -5;
@@ -37,18 +37,29 @@ body {
   display: inline-block;;
 }
 #li1 {
+  font-style: italic;
   padding: 8px;
   background: linear-gradient(45deg, #336600, #66cc00);
 }
 #li2 {
+  font-style: italic;
   padding: 8px;
   background: linear-gradient(35deg, #336600, #66cc00);
 }
 #li3 {
+  font-style: italic;
   padding: 8px;
   background: linear-gradient(45deg, #336600, #66cc00);
+
+  white-space: nowrap;
+}
+#li3 input {
+  border: 2px solid black;
+  font-size: 25px;
+  width: 210px;
 }
 #li4 {
+  font-style: italic;
   padding: 8px;
   float: right;
   background: linear-gradient(45deg, #336600, #66cc00);
@@ -59,37 +70,89 @@ body {
   height: 86%;
   width: 100%;
   overflow: hidden;
-  background: linear-gradient(#4dff4d, #006600);
+  background: linear-gradient(#008000, #003300);
+
 }
-.container {
- width: 100%;
- height: 100%;
-}
-.slide1 {
+
+#slider {
+  color: black;
+  position: relative;
   width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+#slider .controll {
+  font-style: italic;
   position: absolute;
-  left: 0;
   top: 0;
-  height: 100%;
+  width: 40px;
+  height: 90%;
+  background-color: #009900;
+  border: 4px solid black;
+  border-radius:20px;
+  margin-top: 2%;
 }
-.slide1 > div {
-  width: 100%;
+#slider #slides {
+  transition: all 0.7s ease;
+}
+#slider img {
   float: left;
-  height: 100%;
-  overflow: scroll;
- }
-
-.slide1 .content {
-  margin-top: 100px;
-  text-align: center;
- }
-.slide1 .content a {
-  font-size: 30px;
- }
-.slide {
-  background-color: red;
+  width: 800px;
+  height: 530px;
 }
-
+#slider #next {
+  right: 0;
+  margin-right: 2%;
+  transition: background 3s;
+}
+#slider #prev {
+  left: 0;
+  margin-left: 2%;
+  transition: background 3s;
+}
+#prev:hover {
+  background: linear-gradient(90deg, #009900, #194d19);
+}
+#next:hover {
+  background: linear-gradient(90deg, #194d19, #009900);
+}
+.left {
+  position: absolute;
+  transform: rotate(-90deg);
+  text-shadow: 2px 1px #006600;
+  letter-spacing: 3px;
+  text-decoration: overline;
+  font-size:20px;
+  text-align: center;
+  top: 50%;
+  left: -100%;
+}
+.right {
+  position: absolute;
+  transform: rotate(90deg);
+  text-shadow: 2px 1px #006600;
+  letter-spacing: 3px;
+  text-decoration: overline;
+  font-size:20px;
+  text-align: center;
+  top: 50%;
+  left: -70%;
+}
+#slider .obrazek {
+  width: 1100px;
+  height: 530px;
+  margin: 0 auto;
+  margin-top: 1.5%;
+  overflow: hidden;
+  border: 5px solid black;
+  border-radius: 10px;
+}
+#slider .dane {
+  float: left;
+  background-color: #b8b894;
+  width: 300px;
+  height: 530px;
+}
 
 .bottom {
   position: absolute;
@@ -100,4 +163,8 @@ body {
   display: block;
   overflow: hidden;
   font-size: 12px;
+  color: #5c5c3d;
 }
+/*podpis
+data
+ocena*/

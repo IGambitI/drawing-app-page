@@ -2,9 +2,8 @@
 <html>
 <head>
   <title> Drawing-app Page </title>
-  <link rel="stylesheet" type="text/css" href="style/main.css">
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script type="text/javascript" src="script/noclass.js"></script>
+  <link rel="stylesheet" type="text/css" href="style/main.css">
 </head>
 <body>
 
@@ -13,41 +12,22 @@
       <ul>
         <li id="li1"> Najnowsze </li>
         <li id="li2"> Najwyżej oceniane </li>
-        <li id="li3"> Znajdź </li>
+        <li id="li3"> Znajdź <input></li>
         <li id="li4"> Wróć do rysowania</li>
       </ul>
     </nav>
   </div>
-  <hr size="5" color="black" />
+  <hr size="7" color="black" style="border:1px solid #444444; border-radius: 5px;" />
 
   <div class="mid">
-    <div class="container">
-        <div class="slide1">
+    <div id="slider">
+		    <div class="controll" id="prev"><div class="left"><b>Poprzedni</b></div></div>
 
-          <div class="slide">
-            <div class="content">
-              <h1>Slide 1</h1>
-              <a href="#" class="right">&raquo;</a>
-            </div>
-          </div>
+		      <div align="center" class="obrazek">     <div id="slides"></div>   </div>
 
-          <div class="slide">
-            <div class="content">
-              <h1>Slide 2</h1>
-              <a href="#" class="right">&raquo;</a>
-              <a href="#" class="left">&laquo;</a>
-            </div>
-          </div>
-
-          <div class="slide">
-            <div class="content">
-              <h1>Slide 3</h1>
-            <a href="#" class="left">&laquo;</a>
-          </div>
-        </div>
-
-      </div>
-    </div>
+		    <div class="controll" id="next"><div class="right"><b>Kolejny</b></div></div>
+  	</div>
+    <script type="text/javascript" src="script/noclass.js"></script>
   </div>
 
   <div class="bottom">
