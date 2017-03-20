@@ -8,7 +8,7 @@ var wp = (function(){
 		var records = null;
 		var $slides = $slider.find("div").filter("#slides");
 
-		var slides = []
+		var slides = 0
 		var html = "";
 
 
@@ -25,13 +25,13 @@ var wp = (function(){
 				currentSlide--;
 			}
 
-			if (currentSlide > 2)
+			if (currentSlide > slides)
 			{
 				currentSlide = 0;
 			}
 			if (currentSlide < 0)
 			{
-				currentSlide = 2;
+				currentSlide = slides;
 			}
 
 			$slides.css("margin-left", -currentSlide*1100);
@@ -45,9 +45,10 @@ var wp = (function(){
 					success: function(data){
 						for (var i = 0; i < data.length; i++)
 						{
-							html += "<div class=\""+dane+"\"div>";
+							html += '<div class="dane"><div class="podpis"></div><div class="data"></div><div class="ocena"></div></div>';
 							html += "<img src=\""+data[i].image+"\"/>";
 						}
+            slides++;
 						$slides.width(data.length*1100);
 						$slides.html(html);
 					}
